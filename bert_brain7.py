@@ -498,9 +498,7 @@ print(loss_average)
 plt.plot(loss_plot)
 plt.savefig('result/' + 'loss_plot' + '.jpg')
 #plt.show()
-'''
- 预测完成后对前6000个点输出attentionmap值
-'''
+
 input_ids1, segment_ids1, masked_tokens1, masked_pos1= make_predict(0)[0]
 
 logits_lm1, logits_clsf1, h_pooled1, output1, attention_output1,enc_self_attn1= model(torch.LongTensor([input_ids1]).to(device),
