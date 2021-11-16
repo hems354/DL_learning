@@ -37,6 +37,8 @@ import torch
 X, y = torch.tensor(inputs.values), torch.tensor(outputs.values)
 print(X)
 print(y)
-'''reshape和view的区别
+'''
+reshape和view的区别
 reshape的话，当b=a.reshape之后，修改b会直接改变a
+两个是没有本质区别的，reshape其实就是创建一个view
 '''
